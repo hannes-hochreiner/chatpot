@@ -1,0 +1,110 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "chatpot",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "AdvanceStep"
+    },
+    {
+      "name": "Help"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "SelectRecipe"
+    }
+  ],
+  "entities": [
+    {
+      "name": "RecipeName"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [
+    {
+      "name": "Show",
+      "mode": true,
+      "words": "show,find,look,search",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "done",
+      "intent": "AdvanceStep",
+      "entities": []
+    },
+    {
+      "text": "ok",
+      "intent": "AdvanceStep",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "next",
+      "intent": "AdvanceStep",
+      "entities": []
+    },
+    {
+      "text": "help me",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "let's make pasta",
+      "intent": "SelectRecipe",
+      "entities": [
+        {
+          "entity": "RecipeName",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "i would like to make pasta",
+      "intent": "SelectRecipe",
+      "entities": [
+        {
+          "entity": "RecipeName",
+          "startPos": 21,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "i would like to cook pasta",
+      "intent": "SelectRecipe",
+      "entities": [
+        {
+          "entity": "RecipeName",
+          "startPos": 21,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "i feel like making pasta",
+      "intent": "SelectRecipe",
+      "entities": [
+        {
+          "entity": "RecipeName",
+          "startPos": 19,
+          "endPos": 23
+        }
+      ]
+    }
+  ]
+}

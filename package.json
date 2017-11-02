@@ -1,0 +1,16 @@
+{
+  "name": "chatpot",
+  "version": "1.0.0",
+  "description": "A cooking chat bot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hannes Hochreiner <hannes@hochreiner.net>",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.8.4",
+    "dotenv-extended": "^2.0.1",
+    "restify": "^5.0.0"
+  }
+}
